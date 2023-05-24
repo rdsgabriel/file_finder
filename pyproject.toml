@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "file-finder"
+version = "0.1.0"
+description = ""
+authors = ["rdsgabriel <rdsgabriel.dev@gmail.com>"]
+readme = "README.md"
+packages = [{include = "file_finder"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
