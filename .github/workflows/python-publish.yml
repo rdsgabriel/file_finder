@@ -38,8 +38,3 @@ jobs:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
         
-        
-  aching multiple dependencies.
-    cache-dependency-path: # optional
-    # Deprecated. Use node-version instead. Will not be supported after October 1, 2019
-    version: # optional
