@@ -1,5 +1,5 @@
 from datetime import datetime
-from exceptions import FileFinderError
+from where.exceptions import InvalidInputError
 
 
 def get_folders(path):
@@ -56,7 +56,7 @@ def find_by_modified(path, value):
     try:
         datetime_obj = datetime.strptime(value, '%d/%m/%Y')
     except ValueError:
-        raise FileFinderError("Data inválida.")
+        raise InvalidInputError(f'{value} não é uma data válida no formato dd/mm/aaaa.')
 
     return [file for file in get_files(path) if datetime.fromtimestamp(file.stat().st_mtime) >= datetime_obj]
 
