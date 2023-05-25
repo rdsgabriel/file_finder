@@ -2,6 +2,15 @@ from datetime import datetime
 from exceptions import FileFinderError
 
 
+def get_folders(path):
+    """
+    Obtém todos os subdiretórios no diretório pesquisado.
+    :param path: Um objeto Path() que representa o diretório.
+    :return: Uma lista de objetos Path() em que cada elemento será um diretório que existe em `path`.
+    """
+    return [item for item in path.iterdir() if item.is_dir()]
+
+
 def get_files(path):
     """
     Obtém todos os arquivos do diretório pesquisado.
@@ -61,3 +70,24 @@ def timestamp_to_string(system_timestamp):
     """
     datetime_obj = datetime.fromtimestamp(system_timestamp)
     return datetime_obj.strftime('%d/%m/%Y - %H:%M:%S:%f')
+
+
+def get_files_details(files):
+    """
+    Obtém uma lista de listas, contendo os detalhes que vão ser expostos na CLI.
+    :param files: Lista de objetos Path(), apontando para os arquivos no sistema.
+    :return: Uma lista de lista contendo os detalhes a serem expostos na CLI.
+    """
+    files_details = []
+
+    for file in files:
+        stat = file.stat()
+        details = [
+            file.name,
+            timestamp_to_string(stat.st_mtime),
+            file.absolute()
+        ]
+        files_details.append(details)
+
+    return files_details
+        
