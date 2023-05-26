@@ -1,4 +1,4 @@
-# gbWhere
+# gbWhere (https://pypi.org/project/gbwhere/)
 
 O gbWhere é uma ferramenta simples de linha de comando que permite encontrar arquivos em um diretório especificado, com base em critérios de busca personalizados. Ele é desenvolvido em Python e pode ser utilizado em diferentes sistemas operacionais.
 
@@ -15,7 +15,6 @@ O gbWhere é uma ferramenta simples de linha de comando que permite encontrar ar
 
 ## Instalação
 Tendo Python e o pip em sua máquina, basta executar pip install gbwhere
-https://pypi.org/project/gbwhere/
 
 ## Uso
 Execute o script principal: gbwhere --help.
