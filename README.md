@@ -1,3 +1,36 @@
+(versão pt-br mais abaixo)
+
+# gbWhere (https://pypi.org/project/gbwhere/)
+gbWhere is a simple command-line tool that allows you to find files in a specified directory based on custom search criteria. It is developed in Python and can be used on different operating systems.
+
+## Features
+File search by name, extension, or modification date.
+Support for searching in subdirectories.
+Displaying results in a user-readable format in the CLI.
+
+## Prerequisites
+Python (3.x)
+pip
+
+## Installation
+Having Python and pip on your machine, simply run pip install gbwhere.
+
+## Usage
+Execute the main script: gbwhere --help.
+Follow the instructions displayed on the console to enter the desired search criteria.
+Wait for the processing and view the displayed results.
+
+## Contribution
+Contributions are welcome! If you have suggestions, bug fixes, or improvements, feel free to open an issue or submit a pull request.
+
+## Contact
+If you have any questions or suggestions regarding the project, feel free to contact me.
+Contact information can be found on the portfolio:
+https://rdsgabriel.netlify.app/
+
+
+
+
 # gbWhere (https://pypi.org/project/gbwhere/)
 
 O gbWhere é uma ferramenta simples de linha de comando que permite encontrar arquivos em um diretório especificado, com base em critérios de busca personalizados. Ele é desenvolvido em Python e pode ser utilizado em diferentes sistemas operacionais.
